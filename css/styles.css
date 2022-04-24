@@ -86,7 +86,33 @@ body {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-link.current {
+.contact-item::before {
+  content: "";
+
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 12px;
+  width: 16px;
+}
+.email::before {
+  background-image: url(../images/envelope.svg);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-right: 10px;
+} /*
+.email:hover {
+  color: #2196f3;
+}
+.email:focus {
+  color: #2196f3;
+}*/
+.number::before {
+  background-image: url(../images/smartphone.svg);
+  background-size: contain;
+  margin-right: 10px;
+}
+.contact-link.current {
   color: #2196f3;
 }
 
@@ -106,9 +132,21 @@ body {
   color: #2196f3;
 }
 .main-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/image\ 12-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-title {
   font-weight: 900;
@@ -137,6 +175,7 @@ body {
   background: #2196f3;
   color: var(--background-color);
   padding: 10px 32px;
+  cursor: pointer;
 }
 .main-button:hover {
   background-color: #188ce8;
@@ -165,6 +204,30 @@ body {
 .main-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+}
+.main-item::before {
+  content: "";
+  height: 120px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.details::before {
+  background-image: url(../images/Group.svg);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.punctuality::before {
+  background-image: url(../images/clock\ 1.svg);
+}
+.planning::before {
+  background-image: url(../images/diagram\ 1.svg);
+}
+.technology::before {
+  background-image: url(../images/astronaut\ 1.svg);
 }
 .main-item-title {
   font-family: "Roboto";
