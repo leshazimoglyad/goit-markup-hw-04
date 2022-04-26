@@ -332,6 +332,7 @@ body {
 }
 .button-personnel.current {
   background-color: #2196f3;
+  fill: var(--background-color);
 }
 
 .button-personnel-icon {
@@ -441,9 +442,6 @@ body {
   color: #2196f3;
 }
 .footer-container {
-  position: relative;
-  left: 516px;
-  bottom: 100px;
 }
 .footer-button-menu {
   width: 206px;
