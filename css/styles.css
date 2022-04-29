@@ -15,8 +15,8 @@ body {
   background-color: var(--background-color);
   border-bottom: #fff;
   border-bottom: 1px solid #ececec;
+  display: flex;
 }
-
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -81,7 +81,7 @@ body {
 .contacts {
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
 }
 .contact-item {
   fill: #757575;
@@ -528,7 +528,7 @@ body {
 .footer-button {
   width: 44px;
   height: 44px;
-  background-color: var(--secondary-color);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
