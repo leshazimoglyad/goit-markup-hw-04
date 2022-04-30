@@ -95,23 +95,6 @@ body {
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-link-email {
-}
-.contact-button-email {
-  margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: var(--background-color);
-}
-.contact-button-phone {
-  margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: var(--background-color);
-  fill: #757575;
-}
 .contact-button-email-icon {
   width: 16px;
   height: 12px;
@@ -154,6 +137,8 @@ body {
   color: var(--main-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: inline-flex;
+  align-items: center;
 }
 .contact-link:hover {
   color: #2196f3;
